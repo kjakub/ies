@@ -1,4 +1,4 @@
-AngularDemo::Application.routes.draw do
+Ies::Application.routes.draw do
 
   resources :galleries
   

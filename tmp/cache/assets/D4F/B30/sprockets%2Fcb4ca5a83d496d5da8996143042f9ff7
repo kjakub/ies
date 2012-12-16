@@ -1,19 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1355623541.0532923:@value{	I"length:EFiWI"digest;
-F"%91361002c922c828ce57900b932a07e9I"source;
-FI"W'use strict';
-
-/* App Controllers */
-
-myApp.controller('NotesController',function NotesController($scope, Note) {
-  $scope.notes = Note.index({}, function(data){
-    console.log('success, got data: ', data);
-    $scope.response = "yoy!"
-  }, function(err){
-    console.log('error, got data: ', err);
-    $scope.response = "yay!"
-  }
-  ); 
-});
-;
-FI"_version;
-F"%733af4ac49662131b15bd6735a595dc0

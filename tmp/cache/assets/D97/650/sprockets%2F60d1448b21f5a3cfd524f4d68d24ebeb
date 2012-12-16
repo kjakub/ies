@@ -1,17 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1354485660.5523052:@value{I"
-class:EFI"StaticAsset;
-FI"id;
-F"%ea2581b531b6fc2250f1279bf8c6b000I"logical_path;
-FI"photos.html;
-TI"pathname;
-FI"+$root/app/assets/templates/photos.html;
-FI"content_type;
-FI"text/html;
-FI"
-mtime;
-FI"2012-12-02T22:50:20+01:00;
-FI"length;
-FI"	1047;
-FI"digest;
-F"%087011da632e95290592ab37b32d7e50I"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5

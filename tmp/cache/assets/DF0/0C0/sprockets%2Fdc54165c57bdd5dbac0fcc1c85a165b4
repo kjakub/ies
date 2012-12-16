@@ -1,40 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1355623530.7913496:@value{I"
-class:EFI"BundledAsset;
-FI"id;
-F"%733af4ac49662131b15bd6735a595dc0I"logical_path;
-FI",angular/controllers/notes_controller.js;
-FI"pathname;
-FI"I$root/app/assets/javascripts/angular/controllers/notes_controller.js;
-FI"content_type;
-FI"application/javascript;
-FI"
-mtime;
-FI"2012-12-15T17:26:24+01:00;
-FI"	body;
-FI"W'use strict';
-
-/* App Controllers */
-
-myApp.controller('NotesController',function NotesController($scope, Note) {
-  $scope.notes = Note.index({}, function(data){
-    console.log('success, got data: ', data);
-    $scope.response = "yoy!"
-  }, function(err){
-    console.log('error, got data: ', err);
-    $scope.response = "yay!"
-  }
-  ); 
-});
-;
-FI"asset_paths;
-F[I"I$root/app/assets/javascripts/angular/controllers/notes_controller.js;
-FI"dependency_paths;
-F[{I"	path;
-FI"I$root/app/assets/javascripts/angular/controllers/notes_controller.js;
-FI"
-mtime;
-FIu:	Time-Ä†¢Åi
-:@_zoneI"CET;
-T:nano_numi’:nano_deni:submicro"rP:offsetiI"hexdigest;
-F"%01614a026e09917cec9aa7c0f5b10f26I"_version;
-F"%0868aba5d4b750d3a9421721ea3d9b9c

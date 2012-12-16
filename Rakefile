@@ -6,4 +6,4 @@ require 'rake/dsl_definition'
 
 require File.expand_path('../config/application', __FILE__)
 
-AngularDemo::Application.load_tasks
+Ies::Application.load_tasks

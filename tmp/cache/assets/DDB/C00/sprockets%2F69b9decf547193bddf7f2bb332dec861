@@ -1,73 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1355623531.321623:@value{I"
-class:EFI"BundledAsset;
-FI"id;
-F"%ce5b414ce1992c522790d31605db41a1I"logical_path;
-FI"angular-ui.css;
-FI"pathname;
-FI"/home/jk/.rvm/gems/ruby-1.9.3-p194@angular_rails_demo/gems/angular-ui-rails-0.2.1/vendor/assets/stylesheets/angular-ui.css;
-FI"content_type;
-FI"text/css;
-FI"
-mtime;
-FI"2012-12-16T00:35:08+01:00;
-FI"	body;
-FI"ı/**
- * import components to builds angular-ui.css
- */
-
-/* ui-reset */
-
-
-.ui-resetwrap {
-  position: relative;
-  display: inline-block;
-}
-
-.ui-reset {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2;
-  display: none;
-  height: 100%;
-  cursor: pointer;
-}
-
-.ui-resetwrap:hover .ui-reset {
-  display: block;
-}
-
-/* ui-currency */
-
-.ui-currency-pos {
-  color: green;
-}
-
-.ui-currency-neg {
-  color: red;
-}
-
-.ui-currency-zero {
-  color: blue;
-}
-
-/* highlight */
-
-.ui-match {
-  background: yellow;
-}
-
-;
-FI"asset_paths;
-F[I"/home/jk/.rvm/gems/ruby-1.9.3-p194@angular_rails_demo/gems/angular-ui-rails-0.2.1/vendor/assets/stylesheets/angular-ui.css;
-FI"dependency_paths;
-F[{I"	path;
-FI"/home/jk/.rvm/gems/ruby-1.9.3-p194@angular_rails_demo/gems/angular-ui-rails-0.2.1/vendor/assets/stylesheets/angular-ui.css;
-FI"
-mtime;
-FIu:	Time˜-Ä¶
-Äå
-:@_zoneI"CET;
-T:nano_numiâ:nano_deni:submicro"dê:offsetiI"hexdigest;
-F"%f01530a0e4b76ca6a8384b56ba37ca4eI"_version;
-F"%0868aba5d4b750d3a9421721ea3d9b9c

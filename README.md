@@ -1,18 +1,17 @@
 added via gem:
-	angular
-	angular ui
-	jquery
-	jquery ui - full
-	twitter bootstrap - full
+ angular
+ angular ui
+ jquery
+ jquery ui - full
+ twitter bootstrap - full
 
 angular
-	updated syntax controllers no in main window object
-	note resource crud
-	templating
-	improved dir structure under assets
+ note resource crud
+ templating
+ improved dir structure under assets
 
 apiary io
-	note resource
+ note resource
 
 http://blog.berylliumwork.com/2012/09/tutorials-on-angularjs-and-rails-2.html
 https://github.com/centresource/angularjs_rails_demo/blob/master/app/assets/javascripts/controllers.js.erb

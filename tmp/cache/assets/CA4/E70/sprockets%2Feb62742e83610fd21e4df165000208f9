@@ -1,22 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1354485550.7279356:@value{	I"length:EFiãI"digest;
-F"%092014cc7cf41e7a368178a6aef1ccbeI"source;
-FI"ã/* http://docs.angularjs.org/#!angular.widget */
-
-
-angular.directive('my:cycle', function(expr,el){
-  return function(container){
-    this.$watch(function() {
-      if ($(container).children().length) {
-        $(container).cycle({ fx: 'fade',
-                             speed: 500,
-                             timeout: 3000,
-                             pause: 1,
-                             next: '#next',
-                             prev: '#prev' });
-      }
-    });
-  }
-});
-;
-FI"_version;
-F"%eee65008591232607ab7ecd2904f97df
