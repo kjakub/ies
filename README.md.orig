@@ -1,30 +1,4 @@
-added via gem:
-	angular
-	angular ui
-	jquery
-	jquery ui - full
-	twitter bootstrap - full
-
-angular
-	updated syntax controllers no in main window object
-	note resource crud
-	templating
-	improved dir structure under assets
-
-apiary io
-	note resource
-
-http://blog.berylliumwork.com/2012/09/tutorials-on-angularjs-and-rails-2.html
-https://github.com/centresource/angularjs_rails_demo/blob/master/app/assets/javascripts/controllers.js.erb
-https://github.com/IgorMinar/foodme/blob/master/app/js/app.js
-http://angular-ui.github.com/
-http://twitter.github.com/bootstrap/javascript.html#affix
-
-
-		
-to begin i have used:
-
-but a little outdated:
+<<<<<<< HEAD
 Note: Updated to AngularJS 0.10 branch
 ===============================
 
@@ -117,3 +91,9 @@ Thanks to wrap_parameters in 3.1, we have:
     params = { 'id' => 1, 'controller' => 'my_controller', 'action' => 'my_action', 'my_model' => { 'real_param_1' => 'a', 'real_param_2' => 'b' } }
 
 The only downside to wrap_parameters is that it builds itself from the database schema, not from attr_accessible, so if you have attributes that don't correspond to the database, you will have to list them not only in attr_accessible, but also in the controller. See [http://api.rubyonrails.org/classes/ActionController/ParamsWrapper/ClassMethods.html](http://api.rubyonrails.org/classes/ActionController/ParamsWrapper/ClassMethods.html) for details on how to customize what is passed.
+=======
+ies
+===
+
+ies
+>>>>>>> 1af5330f42b0d0aadaee335758c5390b5ff77b30
