@@ -1,0 +1,123 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1354495022.2746816:@value{	I"length:EFi³I"digest;
+F"%4a8714f2ec5d1f34734c986ca2cd5f72I"source;
+FI"³var myApp = angular.module('myApp',['ngResource'])
+
+/* App Controllers */
+myApp.controller('PhotoGalleryCtrl',function ($scope, $route, $xhr) {
+  $xhr.defaults.headers.post['Content-Type'] = 'application/json'
+  $xhr.defaults.headers.put['Content-Type'] = 'application/json'
+
+  // assumes the presence of jQuery
+  var token = $("meta[name='csrf-token']").attr("content");
+  $xhr.defaults.headers.post['X-CSRF-Token'] = token;
+  $xhr.defaults.headers.put['X-CSRF-Token'] = token;
+  $xhr.defaults.headers['delete']['X-CSRF-Token'] = token;
+
+
+  $route.when('/photographers',
+      {template: '/assets/photographers.html', controller: PhotographersCtrl});
+
+  $route.when('/photographers/:photographer_id/galleries',
+      {template: '/assets/galleries.html', controller: GalleriesCtrl});
+
+  $route.when('/photographers/:photographer_id/galleries/:gallery_id/photos',
+      {template: '/assets/photos.html', controller: PhotosCtrl});
+
+  $route.otherwise({redirectTo: '/photographers'});
+})
+
+
+
+
+
+// function PhotoGalleryCtrl($route, $xhr) {
+
+// }
+// PhotoGalleryCtrl.$inject = ['$route', '$xhr'];
+
+function PhotographersCtrl(Photographers) {
+  this.photographers = Photographers.index();
+}
+PhotographersCtrl.$inject = ['Photographers'];
+
+function GalleriesCtrl(Galleries, Photographers, $routeParams) {
+  this.photographer = Photographers.get({ photographer_id: $routeParams.photographer_id });
+  this.galleries = Galleries.index({ photographer_id: $routeParams.photographer_id });
+}
+GalleriesCtrl.$inject =  ['Galleries', 'Photographers', '$routeParams'];
+
+function PhotosCtrl(Photos, Galleries, Photographers, SelectedPhotos, $routeParams) {
+  var self = this;
+
+  self.photographer = Photographers.get({ photographer_id: $routeParams.photographer_id });
+  self.gallery = Galleries.get({ photographer_id: $routeParams.photographer_id, gallery_id: $routeParams.gallery_id });
+  self.photos = Photos.index({ photographer_id: $routeParams.photographer_id, gallery_id: $routeParams.gallery_id });
+  self.selected_photos = SelectedPhotos.index();
+
+
+  self.selectPhoto = function(photo) {
+    var selected_photo = new SelectedPhotos({ selected_photo: { photo_id: photo.id } });
+    selected_photo.$create(function() {
+      self.selected_photos.push(selected_photo);
+    });
+  }
+
+  self.deleteSelectedPhoto = function(selected_photo) {
+    angular.Array.remove(self.selected_photos, selected_photo);
+    selected_photo.$destroy({ selected_photo_id: selected_photo.id });
+  }
+
+  self.saveSelectedPhoto = function(selected_photo) {
+    selected_photo.$update({ selected_photo_id: selected_photo.id });
+    $('input').blur();
+  }
+
+}
+PhotosCtrl.$inject = ['Photos', 'Galleries', 'Photographers', 'SelectedPhotos', '$routeParams'];
+/* http://docs.angularjs.org/#!angular.filter */
+
+;
+/* http://docs.angularjs.org/#!angular.service */
+
+
+angular.service('Photographers', function($resource) {
+ return $resource('photographers/:photographer_id', {},
+                  { 'index': { method: 'GET', isArray: true }});
+});
+
+angular.service('Galleries', function($resource) {
+ return $resource('photographers/:photographer_id/galleries/:gallery_id', {},
+                  { 'index': { method: 'GET', isArray: true }});
+});
+
+angular.service('Photos', function($resource) {
+ return $resource('photographers/:photographer_id/galleries/:gallery_id/photos', {},
+                  { 'index': { method: 'GET', isArray: true }});
+});
+
+angular.service('SelectedPhotos', function($resource) {
+ return $resource('selected_photos/:selected_photo_id', {},
+                    { 'create': { method: 'POST' },
+                      'index': { method: 'GET', isArray: true },
+                      'update': { method: 'PUT' },
+                      'destroy': { method: 'DELETE' }});
+});
+// /* http://docs.angularjs.org/#!angular.widget */
+
+// angular.directive('my:cycle', function(expr,el){
+//   return function(container){
+//     this.$watch(function() {
+//       if ($(container).children().length) {
+//         $(container).cycle({ fx: 'fade',
+//                              speed: 500,
+//                              timeout: 3000,
+//                              pause: 1,
+//                              next: '#next',
+//                              prev: '#prev' });
+//       }
+//     });
+//   }
+// });
+;
+FI"_version;
+F"%5cb12bb632275f08ff6a958bd4f80b03

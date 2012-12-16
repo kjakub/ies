@@ -1,0 +1,24 @@
+<h1>This is show of note</h1>
+<h2>Detail of {{note.id}}</h2>
+
+<!-- <form ng:submit="updateNote(note)">
+  <input ng-model="note.description" />
+  <input type="submit" id="submit" value="Update" />
+</form> -->
+
+
+<form name="noteForm">
+
+  <input ng-model="note.description" />
+
+  <button ng-click="updateNote(note)">Update</button>
+  <button ng-click="destroyNote(note)">Destroy</button>
+  <input ng-model="note.date" ui-date>
+  <input type="text" ng-model="search" class="search-query" placeholder="Search">
+
+</form>
+
+
+
+
+

@@ -1,0 +1,34 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1355623541.0248992:@value{	I"length:EFioI"digest;
+F"%fee6ba20944075d88893579cdd691549I"source;
+FI"o'use strict';
+
+var myApp = angular.module('myApp',['ngResource','ui'])
+
+myApp.config(function ($routeProvider, $httpProvider) {
+    $routeProvider.
+        when('/', 
+          { templateUrl: '/assets/welcome.html' }).
+        
+        when('/notes/', 
+          {templateUrl: '/assets/notes/index.html', controller: 'NotesController'}).
+
+        when('/notes/:note_id', 
+          {templateUrl: '/assets/notes/show.html', controller: 'NotesShowController'}).
+
+        // when('/photographers/:photographer_id/galleries',
+        //   {template: '/assets/galleries.html', controller: GalleriesCtrl}).       
+
+        // when('/photographers/:photographer_id/galleries/:gallery_id/photos',
+        //   {template: '/assets/photos.html', controller: PhotosCtrl}).
+        
+        otherwise({ redirectTo: '/' });
+
+    $httpProvider.defaults.headers.post['Content-Type'] = 'application/json'
+    $httpProvider.defaults.headers.put['Content-Type'] = 'application/json'
+    //assumes the presence of jQuery
+    var token = $("meta[name='csrf-token']").attr("content");
+    $httpProvider.defaults.headers.common['X-CSRF-Token'] = token;
+});
+;
+FI"_version;
+F"%0ac0aab9049cca7440fcf5e86530a5f8

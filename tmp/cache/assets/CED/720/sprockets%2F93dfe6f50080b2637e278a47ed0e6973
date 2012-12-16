@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1355649112.719279:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%c85f966f748f03492cba610e9a907851I"logical_path;
+FI"notes/index.html;
+TI"pathname;
+FI"0$root/app/assets/templates/notes/index.html;
+FI"content_type;
+FI"text/html;
+FI"
+mtime;
+FI"2012-12-14T12:47:15+01:00;
+FI"length;
+FI"265;
+FI"digest;
+F"%87b8978a2b5184514d53622ad060ec79I"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c

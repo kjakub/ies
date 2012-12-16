@@ -1,0 +1,15 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1355623541.0385284:@value{	I"length:EFiÈI"digest;
+F"%078ceddbb832cff3c88ecb84079e852bI"source;
+FI"È'use strict';
+
+/* App Controllers */
+
+myApp.controller('NavbarController', function ($scope, $location) {
+  $scope.routeIs = function(routeName) {
+    return $location.path() === routeName;
+  };
+
+});
+;
+FI"_version;
+F"%d7c8ef66e61838f353977cf3077cc691

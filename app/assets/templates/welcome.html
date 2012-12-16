@@ -1,0 +1,22 @@
+<h1>WELCOME</h1>
+
+<a ng-click="modalShown=true" class="btn btn-primary btn-large">Open 1</a>
+<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Open 2</a>
+
+
+<div ui-modal class="fade myModal" ng-model="modalShown" id="myModal">
+  <div class="modal-header">
+    <a href="#" class="close" data-dismiss="modal">×</a>  
+    <h3>This is a Modal Heading</h3>   
+  </div>
+  <div class="modal-body">  
+    <h4>Text in a modal</h4>  
+    <p>You can add some text here.</p>                
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn btn-success">Call to action</a>
+    <a href="#" class="btn" data-dismiss="modal">Close 1</a>
+    <a class="btn" ng-click="modalShown=false">Close 2</a>
+  </div>
+</div>
+

@@ -1,0 +1,101 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1354492769.9242508:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%c2c6c0e1f9dbaa4b4771520f34eebdb7I"logical_path;
+FI"controllers.js;
+FI"pathname;
+FI"4$root/app/assets/javascripts/controllers.js.erb;
+FI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2012-12-03T00:59:15+01:00;
+FI"	body;
+FI"ú
+var myApp = angular.module('myApp',['ngResource'])
+
+/* App Controllers */
+myApp.controller('PhotoGalleryCtrl',function ($scope, $route, $xhr) {
+  $xhr.defaults.headers.post['Content-Type'] = 'application/json'
+  $xhr.defaults.headers.put['Content-Type'] = 'application/json'
+
+  // assumes the presence of jQuery
+  var token = $("meta[name='csrf-token']").attr("content");
+  $xhr.defaults.headers.post['X-CSRF-Token'] = token;
+  $xhr.defaults.headers.put['X-CSRF-Token'] = token;
+  $xhr.defaults.headers['delete']['X-CSRF-Token'] = token;
+
+
+  $route.when('/photographers',
+      {template: '/assets/photographers.html', controller: PhotographersCtrl});
+
+  $route.when('/photographers/:photographer_id/galleries',
+      {template: '/assets/galleries.html', controller: GalleriesCtrl});
+
+  $route.when('/photographers/:photographer_id/galleries/:gallery_id/photos',
+      {template: '/assets/photos.html', controller: PhotosCtrl});
+
+  $route.otherwise({redirectTo: '/photographers'});
+})
+
+
+
+
+
+// function PhotoGalleryCtrl($route, $xhr) {
+
+// }
+// PhotoGalleryCtrl.$inject = ['$route', '$xhr'];
+
+function PhotographersCtrl(Photographers) {
+  this.photographers = Photographers.index();
+}
+PhotographersCtrl.$inject = ['Photographers'];
+
+function GalleriesCtrl(Galleries, Photographers, $routeParams) {
+  this.photographer = Photographers.get({ photographer_id: $routeParams.photographer_id });
+  this.galleries = Galleries.index({ photographer_id: $routeParams.photographer_id });
+}
+GalleriesCtrl.$inject =  ['Galleries', 'Photographers', '$routeParams'];
+
+function PhotosCtrl(Photos, Galleries, Photographers, SelectedPhotos, $routeParams) {
+  var self = this;
+
+  self.photographer = Photographers.get({ photographer_id: $routeParams.photographer_id });
+  self.gallery = Galleries.get({ photographer_id: $routeParams.photographer_id, gallery_id: $routeParams.gallery_id });
+  self.photos = Photos.index({ photographer_id: $routeParams.photographer_id, gallery_id: $routeParams.gallery_id });
+  self.selected_photos = SelectedPhotos.index();
+
+
+  self.selectPhoto = function(photo) {
+    var selected_photo = new SelectedPhotos({ selected_photo: { photo_id: photo.id } });
+    selected_photo.$create(function() {
+      self.selected_photos.push(selected_photo);
+    });
+  }
+
+  self.deleteSelectedPhoto = function(selected_photo) {
+    angular.Array.remove(self.selected_photos, selected_photo);
+    selected_photo.$destroy({ selected_photo_id: selected_photo.id });
+  }
+
+  self.saveSelectedPhoto = function(selected_photo) {
+    selected_photo.$update({ selected_photo_id: selected_photo.id });
+    $('input').blur();
+  }
+
+}
+PhotosCtrl.$inject = ['Photos', 'Galleries', 'Photographers', 'SelectedPhotos', '$routeParams'];
+;
+FI"asset_paths;
+F[I"4$root/app/assets/javascripts/controllers.js.erb;
+FI"dependency_paths;
+F[{I"	path;
+FI"4$root/app/assets/javascripts/controllers.js.erb;
+FI"
+mtime;
+FIu:	TimeW,ÄÚj˚Ï
+:@_zoneI"CET;
+T:nano_numiI:nano_deni:submicro"2ê:offsetiI"hexdigest;
+F"%49e15acea43848805b768535fca57468I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

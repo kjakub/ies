@@ -1,0 +1,7 @@
+<h1>THIS IS INDEX OF NOTES</h1>
+<ul>
+  <li ng-repeat="note in notes">{{note.id}}-{{note.description}}
+    <a href="#/notes/{{note.id}}">{{note.id}}</a></li>
+</ul>
+<h3>THIS IS RESPONSE FROM SERVER - error or succes notification goes here</h3>
+<div>{{response}}</div>

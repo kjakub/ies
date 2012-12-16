@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1355444963.3445008:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%48cdd1b23bc93887edf285260ac40126I"logical_path;
+FI"photographers.html;
+TI"pathname;
+FI"2$root/app/assets/templates/photographers.html;
+FI"content_type;
+FI"text/html;
+FI"
+mtime;
+FI"2012-12-14T01:29:20+01:00;
+FI"length;
+FI"14;
+FI"digest;
+F"%e0746e79aa486182a7fe253c763a482dI"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

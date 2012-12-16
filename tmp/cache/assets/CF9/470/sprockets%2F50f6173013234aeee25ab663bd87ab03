@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1354485657.3227077:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%24101abbe5fa0c76b302bab8f8429ed9I"logical_path;
+FI"galleries.html;
+TI"pathname;
+FI".$root/app/assets/templates/galleries.html;
+FI"content_type;
+FI"text/html;
+FI"
+mtime;
+FI"2012-12-02T22:50:20+01:00;
+FI"length;
+FI"239;
+FI"digest;
+F"%5973b70608802156cafd64269097f978I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

@@ -1,0 +1,30 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1355623541.0731025:@value{	I"length:EFiýI"digest;
+F"%d1b7a263ff77530574e18f9034dc5b1eI"source;
+FI"ý'use strict';
+
+/* App Controllers */
+
+myApp.controller('NotesShowController',function NotesShowController($scope, Note, $routeParams) {
+  $scope.note = Note.get({ id: $routeParams.note_id });
+
+
+  $scope.updateNote = function(note) {
+    note.$update(
+      function(success){
+        console.log(success);
+      },
+      function(error){
+        console.log(error)
+      });
+  }
+
+  $scope.destroyNote = function(note) {
+    console.log(note)
+    note.$delete(function(success){},function(error){});
+  }
+
+
+});
+;
+FI"_version;
+F"%60848e7ac5f2ff84174e72da0b07b9c0

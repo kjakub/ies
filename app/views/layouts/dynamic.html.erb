@@ -1,0 +1,46 @@
+<!doctype html>
+<html xmlns:ng="http://angularjs.org/">
+<head>
+  <meta charset="utf-8">
+  <title>Angular Rails Demo</title>
+  <%= javascript_include_tag "application" %>
+
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+
+  
+  <%= csrf_meta_tags %>
+</head>
+  <body ng-app="myApp">
+    <header class="navbar navbar-fixed-top" ng-controller="NavbarController">
+      <nav class="navbar-inner">
+        <div class="container">
+          <ul class="nav">
+            <li ng-class="{active: routeIs('/')}"><a href="#/">Home</a></li>
+            <li ng-class="{active: routeIs('/notes')}"><a href="#/notes">Notes</a></li>
+            <li ng-class="{active: routeIs('/who-we-are')}"><a href="#/who-we-are">Who we are</a></li>
+          </ul>
+        <ul class="nav pull-right">
+          <li ng-class="{active: routeIs('/help')}"><a href="#/help">Help</a></li>
+        </ul>
+        </div>
+      </nav>
+    </header>
+    <div id="main" role="main">
+      <div class="container">
+        <div class="content">
+           <div class="row">
+            <div class="span12">
+
+              
+              <div ng-view></div>
+            </div>
+          </div>
+          <footer>
+          </footer>
+        </div>
+      </div> <!--! end of .container -->
+    </div> <!--! end of #main -->
+
+
+  </body>
+</html>
