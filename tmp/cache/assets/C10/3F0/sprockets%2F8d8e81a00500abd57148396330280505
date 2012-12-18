@@ -1,74 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1355658714.8700805:@value{I"
-class:EFI"BundledAsset;
-FI"id;
-F"%2651fa7b235a5cb06782fd56d4a79b1aI"logical_path;
-FI"'angular/controllers/controllers.js;
-FI"pathname;
-FI"H$root/app/assets/javascripts/angular/controllers/controllers.js.erb;
-FI"content_type;
-FI"application/javascript;
-FI"
-mtime;
-FI"2012-12-14T12:20:07+01:00;
-FI"	body;
-FI"‘
-
-
-
-
-// function PhotoGalleryCtrl($route, $xhr) {
-
-// }
-
-function PhotographersCtrl(Photographers) {
-  this.photographers = Photographers.index();
-}
-PhotographersCtrl.$inject = ['Photographers'];
-
-function GalleriesCtrl(Galleries, Photographers, $routeParams) {
-  this.photographer = Photographers.get({ photographer_id: $routeParams.photographer_id });
-  this.galleries = Galleries.index({ photographer_id: $routeParams.photographer_id });
-}
-GalleriesCtrl.$inject =  ['Galleries', 'Photographers', '$routeParams'];
-
-function PhotosCtrl(Photos, Galleries, Photographers, SelectedPhotos, $routeParams) {
-  var self = this;
-
-  self.photographer = Photographers.get({ photographer_id: $routeParams.photographer_id });
-  self.gallery = Galleries.get({ photographer_id: $routeParams.photographer_id, gallery_id: $routeParams.gallery_id });
-  self.photos = Photos.index({ photographer_id: $routeParams.photographer_id, gallery_id: $routeParams.gallery_id });
-  self.selected_photos = SelectedPhotos.index();
-
-
-  self.selectPhoto = function(photo) {
-    var selected_photo = new SelectedPhotos({ selected_photo: { photo_id: photo.id } });
-    selected_photo.$create(function() {
-      self.selected_photos.push(selected_photo);
-    });
-  }
-
-  self.deleteSelectedPhoto = function(selected_photo) {
-    angular.Array.remove(self.selected_photos, selected_photo);
-    selected_photo.$destroy({ selected_photo_id: selected_photo.id });
-  }
-
-  self.saveSelectedPhoto = function(selected_photo) {
-    selected_photo.$update({ selected_photo_id: selected_photo.id });
-    $('input').blur();
-  }
-
-}
-PhotosCtrl.$inject = ['Photos', 'Galleries', 'Photographers', 'SelectedPhotos', '$routeParams'];
-;
-FI"asset_paths;
-F[I"H$root/app/assets/javascripts/angular/controllers/controllers.js.erb;
-FI"dependency_paths;
-F[{I"	path;
-FI"H$root/app/assets/javascripts/angular/controllers/controllers.js.erb;
-FI"
-mtime;
-FIu:	TimeË-€"¸~P
-:@_zoneI"CET;
-T:nano_numiœ:nano_deni:submicro"`:offsetiI"hexdigest;
-F"%f224df7004e2fdca4a86b2fca0d34fb6I"_version;
-F"%0868aba5d4b750d3a9421721ea3d9b9c

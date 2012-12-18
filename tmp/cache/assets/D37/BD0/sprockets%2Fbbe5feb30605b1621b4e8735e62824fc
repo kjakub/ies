@@ -1,37 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1355663657.9176276:@value{	I"length:EFiãI"digest;
-F"%7cc9e69125fd093e80bd9c7c1c805f7fI"source;
-FI"ã'use strict';
-
-var myApp = angular.module('myApp',['ngResource','ui'])
-
-myApp.config(function ($routeProvider, $httpProvider) {
-    $routeProvider.
-        when('/', 
-          { templateUrl: '/assets/welcome.html' }).
-        
-        when('/notes/', 
-          {templateUrl: '/assets/notes/index.html', controller: 'NotesController'}).
-
-        when('/notes/new', 
-          {templateUrl: '/assets/notes/show.html', controller: 'NotesNewController'}).
-
-        when('/notes/:note_id', 
-          {templateUrl: '/assets/notes/show.html', controller: 'NotesShowController'}).
-
-        // when('/photographers/:photographer_id/galleries',
-        //   {template: '/assets/galleries.html', controller: GalleriesCtrl}).       
-
-        // when('/photographers/:photographer_id/galleries/:gallery_id/photos',
-        //   {template: '/assets/photos.html', controller: PhotosCtrl}).
-        
-        otherwise({ redirectTo: '/' });
-
-    $httpProvider.defaults.headers.post['Content-Type'] = 'application/json'
-    $httpProvider.defaults.headers.put['Content-Type'] = 'application/json'
-    //assumes the presence of jQuery
-    var token = $("meta[name='csrf-token']").attr("content");
-    $httpProvider.defaults.headers.common['X-CSRF-Token'] = token;
-});
-;
-FI"_version;
-F"%e7f2cab78f410e0772b20da16c74b7a1

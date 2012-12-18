@@ -1,10 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1355766955.8830903:@value{	I"length:EFixI"digest;
-F"%ae8e37b3c70aa720e5bcd3c3a384da4dI"source;
-FI"xwindow.tinyMCEPreInit = window.tinyMCEPreInit || {
-  base:   '/assets/tinymce',
-  query:  '3.5.8',
-  suffix: ''
-};
-;
-FI"_version;
-F"%bbe22c0f164a0cdabfeed49f4734c61f

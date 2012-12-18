@@ -1,42 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1355658714.9574287:@value{I"
-class:EFI"BundledAsset;
-FI"id;
-F"%c70cc88f60cd721a45604e09d4a174f9I"logical_path;
-FI"angular/widgets/widgets.js;
-FI"pathname;
-FI"<$root/app/assets/javascripts/angular/widgets/widgets.js;
-FI"content_type;
-FI"application/javascript;
-FI"
-mtime;
-FI"2012-12-03T01:36:58+01:00;
-FI"	body;
-FI"// /* http://docs.angularjs.org/#!angular.widget */
-
-// angular.directive('my:cycle', function(expr,el){
-//   return function(container){
-//     this.$watch(function() {
-//       if ($(container).children().length) {
-//         $(container).cycle({ fx: 'fade',
-//                              speed: 500,
-//                              timeout: 3000,
-//                              pause: 1,
-//                              next: '#next',
-//                              prev: '#prev' });
-//       }
-//     });
-//   }
-// });
-;
-FI"asset_paths;
-F[I"<$root/app/assets/javascripts/angular/widgets/widgets.js;
-FI"dependency_paths;
-F[{I"	path;
-FI"<$root/app/assets/javascripts/angular/widgets/widgets.js;
-FI"
-mtime;
-FIu:	Time`,€ä ¢“
-:@_zoneI"CET;
-T:nano_numi£:nano_deni:submicro"“:offsetiI"hexdigest;
-F"%21109f00939cfa0cd11f1b1f096ee862I"_version;
-F"%0868aba5d4b750d3a9421721ea3d9b9c

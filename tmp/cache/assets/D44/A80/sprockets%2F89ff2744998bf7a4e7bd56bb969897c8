@@ -1,36 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1355658714.8765104:@value{I"
-class:EFI"BundledAsset;
-FI"id;
-F"%41aff49feb6aab424c835b1c403e4c0cI"logical_path;
-FI"-angular/controllers/navbar_controller.js;
-FI"pathname;
-FI"J$root/app/assets/javascripts/angular/controllers/navbar_controller.js;
-FI"content_type;
-FI"application/javascript;
-FI"
-mtime;
-FI"2012-12-14T12:18:57+01:00;
-FI"	body;
-FI"È'use strict';
-
-/* App Controllers */
-
-myApp.controller('NavbarController', function ($scope, $location) {
-  $scope.routeIs = function(routeName) {
-    return $location.path() === routeName;
-  };
-
-});
-;
-FI"asset_paths;
-F[I"J$root/app/assets/javascripts/angular/controllers/navbar_controller.js;
-FI"dependency_paths;
-F[{I"	path;
-FI"J$root/app/assets/javascripts/angular/controllers/navbar_controller.js;
-FI"
-mtime;
-FIu:	TimeË-€%Å™K
-:@_zoneI"CET;
-T:nano_numi¹:nano_deni:submicro"D:offsetiI"hexdigest;
-F"%9ca8415fc166d7ab7a942503f3d1ceeaI"_version;
-F"%0868aba5d4b750d3a9421721ea3d9b9c

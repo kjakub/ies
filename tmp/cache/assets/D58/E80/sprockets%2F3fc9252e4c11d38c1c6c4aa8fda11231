@@ -1,18 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1355766961.409151:@value{I"
-class:EFI"StaticAsset;
-FI"id;
-F"%8140dd522f869bb5b6a70ce78520d5e4I"logical_path;
-FI"*tinymce/themes/advanced/img/icons.gif;
-TI"pathname;
-FI"/home/jk/.rvm/gems/ruby-1.9.3-p194@ies/gems/tinymce-rails-3.5.8/vendor/assets/javascripts/tinymce/themes/advanced/img/icons.gif;
-FI"content_type;
-FI"image/gif;
-FI"
-mtime;
-FI"2012-12-17T18:48:47+01:00;
-FI"length;
-FI"
-11982;
-FI"digest;
-F"%ad91fe1f207410af3eca8ee58947ee77I"_version;
-F"%0868aba5d4b750d3a9421721ea3d9b9c

@@ -1,37 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1355846601.8119311:@value{	I"length:EFiœI"digest;
-F"%de3a78a68c9231dc2f87c657762d5851I"source;
-FI"œ'use strict';
-
-/* App Controllers */
-
-myApp.controller('NotesNewController',function NotesNewController($scope,Note,$location) {
-
-  $scope.note = new Note();
-  $scope.note.destinations = {};
-  $scope.destinations = ['AllSchool','AllYear','A1','A2']
-
-  $scope.saveNote = function(neco) {
-    alert(neco);
-    $scope.modalDestination = false;
-    Note.save($scope.note, function(note) {
-    //$scope.note.$save(function(note) {
-      $location.path('/notes/' + note.id);
-    });
-  }
-
-  $scope.openModal = function() {
-    $scope.modalDestination = true;
-
-  } 
-
-  $scope.sendNote = function() {
-    console.log($scope.note)
-    
-    $scope.saveNote('coool');
-  }  
-
-
-});
-;
-FI"_version;
-F"%c18768659584f04f38fc04a85a3aa853
