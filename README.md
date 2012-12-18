@@ -1,16 +1,23 @@
 added via gem:
 	angular
+	
 	angular ui
+	
 	jquery
+	
 	jquery ui - full
+	
 	twitter bootstrap - full
+	
 	tinyMCe
-	angular
- 	note resource crud
-	templating
-	improved dir structure under assets
-	apiary io
-	note resource
+	
+templating
+
+improved dir structure under assets
+
+apiary io
+
+note resource crud
 
 http://blog.berylliumwork.com/2012/09/tutorials-on-angularjs-and-rails-2.html
 
