@@ -1,38 +1,37 @@
 added via gem:
- angular
-
- angular ui
- 
- jquery
- 
- jquery ui - full
- 
- twitter bootstrap - full
- 
- tinyMCe
-
-angular
- 
- note resource crud
- 
- templating
- 
- improved dir structure under assets
-
-apiary io
- 
- note resource
+	angular
+	angular ui
+	jquery
+	jquery ui - full
+	twitter bootstrap - full
+	tinyMCe
+	angular
+ 	note resource crud
+	templating
+	improved dir structure under assets
+	apiary io
+	note resource
 
 http://blog.berylliumwork.com/2012/09/tutorials-on-angularjs-and-rails-2.html
+
 https://github.com/centresource/angularjs_rails_demo/blob/master/app/assets/javascripts/controllers.js.erb
+
 https://github.com/IgorMinar/foodme/blob/master/app/js/app.js
+
 http://angular-ui.github.com/
+
 http://twitter.github.com/bootstrap/javascript.html#affix
+
 http://railsapps.github.com/twitter-bootstrap-rails.html
+
 http://www.hongkiat.com/blog/oauth-connect/
+
 https://github.com/witoldsz/angular-http-auth
+
 http://vxtindia.com/blog/8-tips-for-angular-js-beginners/
+
 http://www.yearofmoo.com/2012/08/use-angularjs-to-power-your-web-application.html
+
 https://github.com/centresource/angularjs_rails_demo/blob/master/app/assets/javascripts/controllers.js.erb
 
 
