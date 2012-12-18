@@ -1,0 +1,58 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1355846600.3848412:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%c18768659584f04f38fc04a85a3aa853I"logical_path;
+FI"0angular/controllers/notes_new_controller.js;
+FI"pathname;
+FI"M$root/app/assets/javascripts/angular/controllers/notes_new_controller.js;
+FI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2012-12-18T17:03:01+01:00;
+FI"	body;
+FI"œ'use strict';
+
+/* App Controllers */
+
+myApp.controller('NotesNewController',function NotesNewController($scope,Note,$location) {
+
+  $scope.note = new Note();
+  $scope.note.destinations = {};
+  $scope.destinations = ['AllSchool','AllYear','A1','A2']
+
+  $scope.saveNote = function(neco) {
+    alert(neco);
+    $scope.modalDestination = false;
+    Note.save($scope.note, function(note) {
+    //$scope.note.$save(function(note) {
+      $location.path('/notes/' + note.id);
+    });
+  }
+
+  $scope.openModal = function() {
+    $scope.modalDestination = true;
+
+  } 
+
+  $scope.sendNote = function() {
+    console.log($scope.note)
+    
+    $scope.saveNote('coool');
+  }  
+
+
+});
+;
+FI"asset_paths;
+F[I"M$root/app/assets/javascripts/angular/controllers/notes_new_controller.js;
+FI"dependency_paths;
+F[{I"	path;
+FI"M$root/app/assets/javascripts/angular/controllers/notes_new_controller.js;
+FI"
+mtime;
+FIu:	TimeP.€À
+:@_zoneI"CET;
+T:nano_numiƒ:nano_deni:submicro"d0:offsetiI"hexdigest;
+F"%474725b6466ffb464f35adcae8ffbb30I"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c

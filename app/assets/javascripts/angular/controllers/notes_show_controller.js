@@ -6,7 +6,7 @@ myApp.controller('NotesShowController',function NotesShowController($scope, Note
   $scope.note = Note.get({ id: $routeParams.note_id });
 
 
-  $scope.updateNote = function(note) {
+  $scope.saveNote = function(note) {
     note.$update(
       function(success){
         console.log(success);

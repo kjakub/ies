@@ -3,5 +3,8 @@
   <li ng-repeat="note in notes">{{note.id}}-{{note.description}}
     <a href="#/notes/{{note.id}}">{{note.id}}</a></li>
 </ul>
+<a href="#/notes/new" class="btn btn-primary btn-mini">New Note</a>
+
+
 <h3>THIS IS RESPONSE FROM SERVER - error or succes notification goes here</h3>
 <div>{{response}}</div>

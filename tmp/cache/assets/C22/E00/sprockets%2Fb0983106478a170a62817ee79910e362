@@ -1,0 +1,67 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1355658714.9050634:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%1690fe9e561bd2a8ea0610de1f965f52I"logical_path;
+FI"!angular/services/services.js;
+FI"pathname;
+FI">$root/app/assets/javascripts/angular/services/services.js;
+FI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2012-12-14T13:09:57+01:00;
+FI"	body;
+FI"ô'use strict';
+/* http://docs.angularjs.org/#!angular.service */
+
+myApp.factory('Note', function($resource) {
+
+  return $resource('http://ies.apiary.io/notes/:id', {id: '@id'}, 
+    { 'index': { method: 'GET', isArray: true },
+      'update': { method: 'PUT'},
+    });
+  });
+
+
+
+
+
+
+
+
+
+// angular.service('Photographers', function($resource) {
+//  return $resource('photographers/:photographer_id', {},
+//                   { 'index': { method: 'GET', isArray: true }});
+// });
+
+// angular.service('Galleries', function($resource) {
+//  return $resource('photographers/:photographer_id/galleries/:gallery_id', {},
+//                   { 'index': { method: 'GET', isArray: true }});
+// });
+
+// angular.service('Photos', function($resource) {
+//  return $resource('photographers/:photographer_id/galleries/:gallery_id/photos', {},
+//                   { 'index': { method: 'GET', isArray: true }});
+// });
+
+// angular.service('SelectedPhotos', function($resource) {
+//  return $resource('selected_photos/:selected_photo_id', {},
+//                     { 'create': { method: 'POST' },
+//                       'index': { method: 'GET', isArray: true },
+//                       'update': { method: 'PUT' },
+//                       'destroy': { method: 'DELETE' }});
+// });
+;
+FI"asset_paths;
+F[I">$root/app/assets/javascripts/angular/services/services.js;
+FI"dependency_paths;
+F[{I"	path;
+FI">$root/app/assets/javascripts/angular/services/services.js;
+FI"
+mtime;
+FIu:	TimeÌ-€ˆŠ'
+:@_zoneI"CET;
+T:nano_numiœ:nano_deni:submicro"`:offsetiI"hexdigest;
+F"%32eb489d50590004a35befc6ff284501I"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c

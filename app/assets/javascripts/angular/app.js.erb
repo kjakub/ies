@@ -2,13 +2,16 @@
 
 var myApp = angular.module('myApp',['ngResource','ui'])
 
-myApp.config(function ($routeProvider, $httpProvider) {
+myApp.config(function ($routeProvider, $httpProvider, $locationProvider) {
     $routeProvider.
         when('/', 
           { templateUrl: '<%= asset_path("welcome.html") %>' }).
         
         when('/notes/', 
           {templateUrl: '<%= asset_path("notes/index.html") %>', controller: 'NotesController'}).
+
+        when('/notes/new', 
+          {templateUrl: '<%= asset_path("notes/show.html") %>', controller: 'NotesNewController'}).
 
         when('/notes/:note_id', 
           {templateUrl: '<%= asset_path("notes/show.html") %>', controller: 'NotesShowController'}).
@@ -26,4 +29,6 @@ myApp.config(function ($routeProvider, $httpProvider) {
     //assumes the presence of jQuery
     var token = $("meta[name='csrf-token']").attr("content");
     $httpProvider.defaults.headers.common['X-CSRF-Token'] = token;
+
+    $locationProvider.html5Mode(true);
 });

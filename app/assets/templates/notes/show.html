@@ -1,22 +1,57 @@
-<h1>This is show of note</h1>
-<h2>Detail of {{note.id}}</h2>
-
-<!-- <form ng:submit="updateNote(note)">
-  <input ng-model="note.description" />
-  <input type="submit" id="submit" value="Update" />
-</form> -->
-
+<h2 ng-show="note.id">Detail of {{note.id}}</h2>
 
 <form name="noteForm">
+  
+  <div class="control-group" ng-class="{error: noteForm.description.$invalid}">
+    <label>Description</label>
+    <input type="text" name="description" ng-model="note.description" required>
+    <span ng-show="noteForm.description.$error.required" class="help-inline">Required</span>
+  </div>
+ 
+  <div class="control-group" ng-class="{error: noteForm.site.$invalid}">
+    <label>Website</label>
+    <input type="url" name="site" ng-model="note.site">
+<!--     <input type="url" name="site" ng-model="note.site" required>
+    <span ng-show="noteForm.site.$error.required" class="help-inline">Required</span>
+    <span ng-show="noteForm.site.$error.url" class="help-inline">Not a URL</span> -->
+  </div>
+ 
+  <label>Message</label>
+  <textarea ui-tinymce name="message" ng-model="note.message"></textarea>
+ 
+  <br>
+  <a href="#/notes" class="btn">Cancel</a>
 
-  <input ng-model="note.description" />
-
-  <button ng-click="updateNote(note)">Update</button>
-  <button ng-click="destroyNote(note)">Destroy</button>
-  <input ng-model="note.date" ui-date>
-  <input type="text" ng-model="search" class="search-query" placeholder="Search">
+  <button ng-click="saveNote(note)" ng-disabled="isClean() || noteForm.$invalid"
+    class="btn btn-primary">Save</button>
+  <button ng-click="destroyNote(note)" ng-show="note.id" class="btn btn-danger">Delete</button>
+  
+  <button ng-click="openModal()" ng-disabled=""
+    class="btn btn-primary" ng-show="!note.id">Open Modal</button>
 
 </form>
+
+
+<div ui-modal class="fade" ng-model="modalDestination" id="destinationModal">
+  <div class="modal-header">
+    <a href="#" class="close" data-dismiss="modal">×</a>  
+    <h3>This is a Modal Heading</h3>   
+  </div>
+  <div class="modal-body">  
+    <h4>Choose Destination</h4>  
+    <p>
+      <ul>
+        <li ng-repeat="destination in destinations">{{destination}}
+          <input type="checkbox" value="{{destination}}" ng:model="note.destinations[destination]">
+        </li>
+      </ul>
+    </p>                
+  </div>
+  <div class="modal-footer">
+    <a ng-click="sendNote()" class="btn btn-success">Send</a>
+    <a href="#" class="btn" data-dismiss="modal">Close 1</a>
+  </div>
+</div>
 
 
 

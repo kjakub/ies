@@ -1,0 +1,29 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1355658714.8979754:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%422bb1b377c60b474f5f56833baaa192I"logical_path;
+FI"angular/filters/filters.js;
+FI"pathname;
+FI"<$root/app/assets/javascripts/angular/filters/filters.js;
+FI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2012-12-02T22:50:20+01:00;
+FI"	body;
+FI"9/* http://docs.angularjs.org/#!angular.filter */
+
+;
+;
+FI"asset_paths;
+F[I"<$root/app/assets/javascripts/angular/filters/filters.js;
+FI"dependency_paths;
+F[{I"	path;
+FI"<$root/app/assets/javascripts/angular/filters/filters.js;
+FI"
+mtime;
+FIu:	TimeU,€~<LÉ
+:@_zoneI"CET;
+T:nano_numi6:nano_deni:submicro"‚ :offsetiI"hexdigest;
+F"%5905da095033fd5911607d1d77dd26e5I"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c

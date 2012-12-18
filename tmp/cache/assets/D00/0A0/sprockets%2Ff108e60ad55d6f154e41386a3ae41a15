@@ -1,0 +1,27 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1355662054.38061:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%a232919837fe36596b53529018893b28I"logical_path;
+FI",tinymce/themes/advanced/langs/en_dlg.js;
+TI"pathname;
+FI"ê/home/jk/.rvm/gems/ruby-1.9.3-p194@angular_rails_demo/gems/tinymce-rails-3.5.8/vendor/assets/javascripts/tinymce/themes/advanced/langs/en_dlg.js;
+FI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2012-12-16T13:41:06+01:00;
+FI"	body;
+FI"ºtinyMCE.addI18n('en.advanced_dlg', {"link_list":"Link List","link_is_external":"The URL you entered seems to be an external link. Do you want to add the required http:// prefix?","link_is_email":"The URL you entered seems to be an email address. Do you want to add the required mailto: prefix?","link_titlefield":"Title","link_target_blank":"Open Link in a New Window","link_target_same":"Open Link in the Same Window","link_target":"Target","link_url":"Link URL","link_title":"Insert/Edit Link","image_align_right":"Right","image_align_left":"Left","image_align_textbottom":"Text Bottom","image_align_texttop":"Text Top","image_align_bottom":"Bottom","image_align_middle":"Middle","image_align_top":"Top","image_align_baseline":"Baseline","image_align":"Alignment","image_hspace":"Horizontal Space","image_vspace":"Vertical Space","image_dimensions":"Dimensions","image_alt":"Image Description","image_list":"Image List","image_border":"Border","image_src":"Image URL","image_title":"Insert/Edit Image","charmap_title":"Select Special Character", "charmap_usage":"Use left and right arrows to navigate.","colorpicker_name":"Name:","colorpicker_color":"Color:","colorpicker_named_title":"Named Colors","colorpicker_named_tab":"Named","colorpicker_palette_title":"Palette Colors","colorpicker_palette_tab":"Palette","colorpicker_picker_title":"Color Picker","colorpicker_picker_tab":"Picker","colorpicker_title":"Select a Color","code_wordwrap":"Word Wrap","code_title":"HTML Source Editor","anchor_name":"Anchor Name","anchor_title":"Insert/Edit Anchor","about_loaded":"Loaded Plugins","about_version":"Version","about_author":"Author","about_plugin":"Plugin","about_plugins":"Plugins","about_license":"License","about_help":"Help","about_general":"About","about_title":"About TinyMCE","anchor_invalid":"Please specify a valid anchor name.","accessibility_help":"Accessibility Help","accessibility_usage_title":"General Usage","invalid_color_value":"Invalid color value","":""});
+;
+FI"asset_paths;
+F[I"ê/home/jk/.rvm/gems/ruby-1.9.3-p194@angular_rails_demo/gems/tinymce-rails-3.5.8/vendor/assets/javascripts/tinymce/themes/advanced/langs/en_dlg.js;
+FI"dependency_paths;
+F[{I"	path;
+FI"ê/home/jk/.rvm/gems/ruby-1.9.3-p194@angular_rails_demo/gems/tinymce-rails-3.5.8/vendor/assets/javascripts/tinymce/themes/advanced/langs/en_dlg.js;
+FI"
+mtime;
+FIu:	Time.Ä Êk§
+:@_zoneI"CET;
+T:nano_numin:nano_deni:submicro"b :offsetiI"hexdigest;
+F"%a2649050e747097f0f894c35c45033abI"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c

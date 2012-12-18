@@ -8,9 +8,11 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 
 gem 'angularjs-rails'
-gem 'angular-ui-rails'
+gem 'angular-ui-rails', :git => 'git://github.com/mikepinde/angular-ui-rails.git'
 
 gem 'bootstrap-sass'
+
+gem 'tinymce-rails'
 
 
 gem 'sqlite3'

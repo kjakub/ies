@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1355662059.7764468:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%fcef672569b683a83b2bc5698f1dbc52I"logical_path;
+FI"&tinymce/themes/advanced/image.htm;
+TI"pathname;
+FI"Š/home/jk/.rvm/gems/ruby-1.9.3-p194@angular_rails_demo/gems/tinymce-rails-3.5.8/vendor/assets/javascripts/tinymce/themes/advanced/image.htm;
+FI"content_type;
+FI"text/html;
+FI"
+mtime;
+FI"2012-12-16T13:41:06+01:00;
+FI"length;
+FI"	4038;
+FI"digest;
+F"%b7cd1d4b86137119b615c695fb2a8b89I"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c
